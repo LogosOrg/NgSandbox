@@ -1,0 +1,56 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    background: #19386f;
+    color: #fff;
+    padding: 0 2rem;
+    height: 56px;
+}
+
+.logo {
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 2rem;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 14px;
+    border-radius: 4px;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.navbar-menu a.active,
+.navbar-menu a:hover {
+    background: #2454a5;
+}
+
+.material-icons {
+    font-size: 1.1em;
+    margin-right: 3px;
+}
+
+
+.navbar-lang {
+  margin-left: auto; /* 오른쪽 끝으로 밀림 */
+  display: flex;
+  align-items: center;
+}
+
+.navbar-lang button {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.lang-switch{
+    background-color: #2454a5;
+}

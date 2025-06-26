@@ -1,0 +1,19 @@
+<nav class="navbar">
+  <span class="material-icons">dashboard</span>
+  <span class="logo">{{'angular-sandbox' | translate}}</span>
+  <div class="navbar-menu">
+    <a *ngFor="let item of menu" [routerLink]="!item.external ? item.route : null"
+      [href]="item.external ? item.url : null" [attr.target]="item.external ? '_blank' : null"
+      [attr.rel]="item.external ? 'noopener noreferrer' : null" routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }" class="navbar-link">
+      <span *ngIf="item.icon" class="material-icons">{{ item.icon }}</span>
+      {{ item.label | translate }}
+      <span *ngIf="item.external" style="font-size:0.8em; margin-left:2px;">↗</span>
+    </a>
+  </div>
+  <div class="navbar-lang">
+    <button mat-button class="lang-switch" color="primary" (click)="languageSwitch()">
+      {{ 'lang-switch' | translate }}
+    </button>
+  </div>
+</nav>

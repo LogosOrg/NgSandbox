@@ -10,12 +10,10 @@ This guide will help you set up your environment and get started with the NgSand
 - Download the **LTS version** for your operating system (Windows, Mac, or Linux).
 - Run the installer with default settings (no special configuration needed).
 - After installation, open **Command Prompt** (Windows) or **Terminal** (Mac/Linux) and check the versions:
-
   ```bash
   node -v
   npm -v
   ```
-
   You should see version numbers for both Node.js and npm.
 
 ---
@@ -23,6 +21,7 @@ This guide will help you set up your environment and get started with the NgSand
 ## 2. Install Angular CLI
 
 - Open a new **Command Prompt** or **Terminal** window.
+
 - Install Angular CLI globally:
 
   ```bash
@@ -43,7 +42,6 @@ This guide will help you set up your environment and get started with the NgSand
 
 - Create or navigate to a directory where you want to store your practice projects.
 - Run:
-
   ```bash
   git clone https://github.com/LogosOrg/NgSandbox.git
   cd NgSandbox
@@ -51,7 +49,17 @@ This guide will help you set up your environment and get started with the NgSand
 
 ---
 
-## 4. Open the Project in Visual Studio Code
+## 4. Install Dependencies
+
+- Open your project root directory (`NgSandbox`), then run:
+  ```bash
+  npm install --force
+  ```
+- This will install all required libraries based on `package.json`.
+
+---
+
+## 5. Open the Project in Visual Studio Code
 
 - Launch **Visual Studio Code**.
 - Go to **File > Open Folder** (or just **Open** on Mac).
@@ -59,7 +67,7 @@ This guide will help you set up your environment and get started with the NgSand
 
 ---
 
-## 5. Ready to Start!
+## 6. Ready to Start!
 
 You’re now ready to start practicing with Angular using the NgSandbox project.
 
